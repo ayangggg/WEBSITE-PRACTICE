@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Crossing</title>
+  </head>
+  <style>
+    body {
+  background: linear-gradient(108.1deg, rgb(167, 220, 225) 11.2%, rgb(217, 239, 242) 88.9%);
+}
+h1,
+h2,
+h3 {
+  background-color: white;
+  color:black;
+  text-align: center;
+  
+}
+
+h1 {
+  color:black;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 20px;
+}
+
+h2 {
+  border: 1px solid #FECF4E;
+  color:black;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  
+}
+
+h3 {
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+a {
+  text-align: center;
+}
+
+p {
+  background-color: rgb(227, 162, 77);
+  line-height: 1.5;
+  color: black;
+  font-size: 16px;
+  margin: 20px 0 10px;
+  text-align: center;
+  
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: #795132;
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px , rgba(0, 0, 0, 3);
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+img:hover{
+  background-color: darkkhaki;
+  transition: all 300ms ease-in-out;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+
+.learn-more {
+  display: block;
+  margin-top: 13px;
+  text-decoration: none;
+  color: blueviolet;
+  background-color: lightblue;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  background-color: transparent;
+}
+
+  </style>
+  <body>
+    
+    <div class="container">
+      <h1>Play Animal Crossing!</h1>
+    <hr />
+      <h2>
+          Animal Crossing: New Horizons
+      </h2>
+      <img
+        src="https://external-preview.redd.it/9Os4XFeayn-hYt7kLnNpXKA-RpE8QAHeHrRH2kfOdHw.jpg?auto=webp&s=4e498ecd34b033b74d79b413ebc2f151422394a7"
+        alt="Animal Crossing"
+        width="700"
+      />
+      <p>
+        Animal Crossing: New Horizons is a 2020 social simulation game developed and published by Nintendo for the Nintendo Switch; it is the fifth main entry in the Animal Crossing series.
+      </p>
+      <span>
+      <p>
+      <a
+        href="https://www.animal-crossing.com/new-horizons/"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Animal Crossing</a>
+      </p>
+      </span>
+      <h3>
+        <em>Meet the characters!</em>
+        </h3>
+        <br />
+        <img
+        src="https://play.nintendo.com/images/AC_Tom_FRYtwIN.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png"
+        alt="Toom Nook"
+        width="300"
+        />
+        <p>
+        <strong>Tom Nook</strong>
+        <br />
+        In New Horizons, Nook acts as the head of 
+        Nook Incorporated. He acts as the leader on the 
+        island, acting as task giver and island upgrader.
+      </p>
+
+        <br />
+        <img
+        src="https://static.wikia.nocookie.net/animalcrossing/images/6/6c/Timmy_and_Tommy_NH.png/revision/latest?cb=20200828185411"
+        alt="Timmy and Tommy Nook"
+        width="300"
+        />
+        
+        <p>
+        <strong>Timmy and Tommy Nook</strong>
+        <br />
+        Timmy buys and sells items inside the Resident Services tent, while Tommy wanders outside with a flag and provides tips. It is notable that Tommy has a slightly higher pitched voice than Timmy, since he is younger than his twin Timmy.
+        </p>
+    
+      <button class="buy-button">👉 Buy Animal Crossing: New Horizons</button>
+      <p class="footer">This page was built by Laura Piod</p>
+      </p>
+    </div>
+    <script>
+      function buy () {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favourite emoji?");
+
+        alert(
+          "Thank you, " + name + "! We'll see you soon on the island! " + emoji
+        )
+      }
+      
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
